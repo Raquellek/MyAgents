@@ -1,0 +1,53 @@
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv*/
+venv/
+env/
+agentcrew/.env
+.env
+.env.*
+
+# Logs and generated runs
+logs/
+**/logs/
+**/.local/
+__MACOSX/
+**/__MACOSX/
+PPO_logs/
+video/
+frames_shared/
+PPO_gif_images/
+PPO_figs/
+PPO_gifs/
+
+# Model/checkpoint artifacts: upload these to Hugging Face instead.
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.onnx
+checkpoints/
+independent_a2c_combat/
+PPO_preTrained/
+
+# Archives and large generated media
+*.zip
+*.tar
+*.tar.gz
+*.mp4
+*.avi
+*.gif
+
+# Nested third-party git checkouts
+ma-gym/
+newbie/
+.agents/
+.codex
+.codex/

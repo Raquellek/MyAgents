@@ -1,0 +1,51 @@
+planning_task:
+  description: >
+    Build the execution plan for a paper about {topic} in {current_year}.
+    Define the central research question, thesis, target audience, key
+    sections, and the evidence still needed from the rest of the team.
+  expected_output: >
+    A concise paper brief in markdown with the title, thesis, section outline,
+    and a tasking plan for the researcher, coder, writer, and critic.
+  agent: manager
+
+research_task:
+  description: >
+    Use the paper brief to research {topic}. Collect the most relevant concepts,
+    evidence, examples, and source candidates. Focus on information that helps
+    answer the central research question and supports the thesis.
+  expected_output: >
+    A markdown research dossier with key findings, why they matter, and a short
+    source list for each major section of the paper.
+  agent: researcher
+
+coding_task:
+  description: >
+    Based on the paper brief and research dossier, produce the technical content
+    for the paper. Include algorithms, pseudocode, implementation notes,
+    workflow steps, experiment design ideas, evaluation metrics, and any code
+    examples that make the paper more concrete and reproducible.
+  expected_output: >
+    A markdown technical appendix containing implementation details, pseudocode,
+    metrics, and concrete technical recommendations for the paper.
+  agent: coder
+
+writing_task:
+  description: >
+    Write the first full paper draft about {topic} using the paper brief,
+    research dossier, and technical appendix. The draft should include an
+    abstract, introduction, main sections, conclusion, and a references section
+    placeholder when exact citations are not available.
+  expected_output: >
+    A complete academic-style paper draft in markdown without code fences.
+  agent: writer
+
+critique_task:
+  description: >
+    Critically review the draft paper for logic gaps, weak evidence,
+    repetitiveness, and unclear writing. Revise the paper directly so the final
+    result is cleaner, more rigorous, and publication-ready.
+  expected_output: >
+    A polished final paper in markdown with improved structure, stronger claims,
+    and clear section transitions.
+  agent: critic
+  output_file: output/paper.md

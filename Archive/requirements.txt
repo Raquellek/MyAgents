@@ -1,0 +1,6 @@
+magent2>=0.3.2
+torch>=2.0.0
+numpy>=1.23
+matplotlib>=3.6
+gymnasium>=0.28
+pettingzoo==1.22.4
